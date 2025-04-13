@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.difficulty-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+select, button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.game-area {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.guess-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#guess-input {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.result-section {
+    display: flex;
+    gap: 20px;
+}
+
+.hints, .matches {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.match-item {
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.match-item.correct {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.hint-item {
+    margin-bottom: 8px;
+}
+
+.attribute-list, .race-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.attribute-item, .race-item {
+    padding: 3px 8px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .result-section {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏王卡片猜谜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>游戏王卡片猜谜</h1>
+        
+        <div class="difficulty-selector">
+            <label for="difficulty">选择难度:</label>
+            <select id="difficulty">
+                <option value="easy">简单</option>
+                <option value="medium">中等</option>
+                <option value="hard">困难</option>
+            </select>
+            <button id="start-game">开始游戏</button>
+        </div>
+
+        <div class="game-area hidden">
+            <div class="guess-section">
+                <input type="text" id="guess-input" placeholder="输入怪兽卡名称">
+                <button id="submit-guess">提交</button>
+            </div>
+            
+            <div class="result-section">
+                <div class="hints">
+                    <h3>提示区</h3>
+                    <div id="hints-display"></div>
+                </div>
+                
+                <div class="matches">
+                    <h3>匹配结果</h3>
+                    <div id="matches-display"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
